@@ -33,8 +33,6 @@ def check_price():
 
 # Send the email - You can either set up 2 factor auth and generate a specific password or you can turn on less secure apps and use your current gmail email and password
 # Must use a gmail email
-
-
 def send_email():
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
@@ -59,7 +57,6 @@ def send_email():
     print('Email Has Been Sent')
 
     server.quit()
-
 
 # Check every hour for price changes
 while(True):
