@@ -16,8 +16,6 @@ URL = url
 headers = {" "}
 
 # Get the title and price of you item
-
-
 def check_price():
     page = requests.get(URL, headers=headers)
 
